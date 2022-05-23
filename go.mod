@@ -1,4 +1,4 @@
-module example/web-service-gin
+module github.com/panda1835/go-api
 
 go 1.17
 
