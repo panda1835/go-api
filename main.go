@@ -20,8 +20,8 @@ func main() {
 
 type post_response struct {
 	Name  string  `json:"name"`
-	Score float32 `json:"score`
-	URL   string  `json:"crop_url`
+	Score float32 `json:"score"`
+	URL   string  `json:"crop_url"`
 }
 
 func postImage(c *gin.Context) {
