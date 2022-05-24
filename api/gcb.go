@@ -1,5 +1,7 @@
 package api
 
+// Module that works with Google Cloud Bucket
+
 import (
 	"context"
 	"fmt"
