@@ -1,0 +1,6 @@
+./crop_image/*
+upload_image/recent_image
+.DS_Store
+export_credentials.sh
+go-api-351011-225ed51c10cb.json
+rua-ba-go.jpeg
