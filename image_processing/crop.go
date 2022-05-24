@@ -27,10 +27,10 @@ func CropBoundingBox(img_src, img_dest string, coord [4][2]int16) error {
 	}
 
 	// create a blank canvas for each bounding box
-	bounding_canvas := image.NewRGBA(image.Rect(0, 0, int(coord[1][0]), int(coord[2][1])))
+	bounding_canvas := image.NewRGBA(image.Rect(0, 0, int(coord[1][0]-coord[0][0]), int(coord[2][1]-coord[1][1])))
 
 	// draw the bounding section of the image on the just created canvas
-	draw.Draw(bounding_canvas, image.Rect(int(coord[0][0]), int(coord[0][1]), int(coord[2][0]), int(coord[2][1])), dest_img, image.Point{int(coord[0][0]), int(coord[0][1])}, draw.Src)
+	draw.Draw(bounding_canvas, image.Rect(0, 0, int(coord[1][0]-coord[0][0]), int(coord[2][1]-coord[1][1])), dest_img, image.Point{int(coord[0][0]), int(coord[0][1])}, draw.Src)
 
 	file, err := os.Create(img_dest)
 	if err != nil {
