@@ -5,6 +5,8 @@ import (
 	"context"
 	"fmt"
 	"image"
+	_ "image/jpeg"
+	_ "image/png"
 	"log"
 	"os"
 
