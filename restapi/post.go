@@ -1,5 +1,7 @@
 package restapi
 
+// Code for POST
+
 import (
 	"fmt"
 	"log"

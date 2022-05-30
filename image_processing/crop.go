@@ -1,5 +1,7 @@
 package image_processing
 
+// Code that is used to crop images from bounding box coordinates
+
 import (
 	"image"
 	"image/draw"

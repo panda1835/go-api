@@ -1,6 +1,6 @@
 package api
 
-// Module that works with Google Cloud Bucket
+// Code that upload a file to Google Cloud bucket.
 
 import (
 	"context"

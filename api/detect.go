@@ -1,6 +1,7 @@
 package api
 
-// [START imports]
+// Code that leverage Cloud Vision API to detect objects in an image.
+
 import (
 	"context"
 	"fmt"
@@ -12,8 +13,6 @@ import (
 
 	vision "cloud.google.com/go/vision/apiv1"
 )
-
-// [END imports]
 
 func init() {
 	// Refer to these functions so that goimports is happy before boilerplate is inserted.
