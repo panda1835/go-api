@@ -13,7 +13,7 @@ The API takes advantage of **Google Vision API** for object detection, and **Goo
 ## Code design
 ![code](media/code_design.png)
 
-## Usage
+## Set up
 1. Download dependencies with
     ```text
     go get .
@@ -29,6 +29,25 @@ The API takes advantage of **Google Vision API** for object detection, and **Goo
    - Name: `allUsers`
    - Role: `Storage Legacy Object Reader`
 7. Everything should work fine now. Otherwise, visit [Errors](README.md#errors) section for how to fix common errors.
+
+## Usage
+1. Start the program
+   ```bash
+   go run main.go
+   ```
+2. There are 2 ways to make a request. You can either access the API by using `curl` command in the terminal (by replacing the `file` your file path)
+   ```bash
+   curl http://localhost:8080/upload \
+      --header "Content-Type: multipart/form-data" \
+      --request POST \
+      -F "file=@your-file-path"
+   ```
+
+
+   or ...
+
+
+   You can open the file `index.html` in your browser and interact directly from that.
 
 ## Errors
 1. If you encounter an error like
